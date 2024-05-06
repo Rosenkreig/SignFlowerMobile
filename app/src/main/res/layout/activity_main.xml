@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAD1D0"
+    android:foregroundTint="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="366dp"
+        android:layout_height="680dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/capricorn"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imcapricorn"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/capricorn" />
+
+            <TextView
+                android:id="@+id/textcapricorn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Caprıcorn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imcapricorn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/aquarius"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/capricorn">
+
+            <ImageView
+                android:id="@+id/imaquarius"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/aquarius" />
+
+            <TextView
+                android:id="@+id/textaquarius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Aquarıus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imaquarius" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pisces"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/aquarius">
+
+            <ImageView
+                android:id="@+id/impisces"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/pisces" />
+
+            <TextView
+                android:id="@+id/textpisces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Pısces"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/impisces" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/libra"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toTopOf="@+id/capricorn"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imlibra"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/libra" />
+
+            <TextView
+                android:id="@+id/textlibra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Lıbra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imlibra" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cancer"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toTopOf="@+id/libra"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imcancer"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/cancer" />
+
+            <TextView
+                android:id="@+id/textcancer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Cancer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imcancer" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scorpio"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toTopOf="@+id/aquarius"
+            app:layout_constraintStart_toEndOf="@+id/libra">
+
+            <ImageView
+                android:id="@+id/imscorpio"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/scorpio" />
+
+            <TextView
+                android:id="@+id/textscorpio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Scorpıo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imscorpio" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/saguttarius"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toTopOf="@+id/pisces"
+            app:layout_constraintStart_toEndOf="@+id/scorpio">
+
+            <ImageView
+                android:id="@+id/imsaguttarius"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/saguttarius" />
+
+            <TextView
+                android:id="@+id/textsaguttarius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Saguttarıus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imsaguttarius" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leo"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toTopOf="@+id/scorpio"
+            app:layout_constraintStart_toEndOf="@+id/cancer">
+
+            <ImageView
+                android:id="@+id/imleo"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/leo" />
+
+            <TextView
+                android:id="@+id/textleo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Leo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imleo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/virgo"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toTopOf="@+id/saguttarius"
+            app:layout_constraintStart_toEndOf="@+id/leo">
+
+            <ImageView
+                android:id="@+id/imvirgo"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/virgo" />
+
+            <TextView
+                android:id="@+id/textvirgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Vırgo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imvirgo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/aries"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toTopOf="@+id/cancer"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imaries"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/aries" />
+
+            <TextView
+                android:id="@+id/textaries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Arıes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imaries" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/taurus"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toTopOf="@+id/leo"
+            app:layout_constraintStart_toEndOf="@+id/aries">
+
+            <ImageView
+                android:id="@+id/imtaurus"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/taurus" />
+
+            <TextView
+                android:id="@+id/textflower11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Taurus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imtaurus" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/gemini"
+            android:layout_width="122dp"
+            android:layout_height="148dp"
+            android:background="#FDDEDD"
+            app:layout_constraintBottom_toTopOf="@+id/virgo"
+            app:layout_constraintStart_toEndOf="@+id/taurus">
+
+            <ImageView
+                android:id="@+id/imgemini"
+                android:layout_width="94dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/gemini" />
+
+            <TextView
+                android:id="@+id/textgemini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fonttype"
+                android:text="Gemını"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgemini" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/signflower"
+            android:layout_width="364dp"
+            android:layout_height="85dp"
+            android:background="#FDDEDD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imsignflower"
+                android:layout_width="350dp"
+                android:layout_height="77dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/signflower" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
